@@ -1,0 +1,10 @@
+<app-loading *ngIf="this.cargando" ></app-loading>
+<div *ngIf="!this.cargando" class="card-columns">
+    <div *ngFor="let personaje of this.ArrayPersonajes" class="card bg-dark">
+      <img src="{{personaje.thumbnail.path}}.{{personaje.thumbnail.extension}}" width="150" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title badge-danger text-white"><!--<span class="badge badge-danger">-->{{personaje.name}}<!--</span>--></h5>
+        <h6><a href="{{personaje.urls[0].url}}" target="_blank">Touch here!</a></h6>
+      </div>
+    </div>
+  </div>

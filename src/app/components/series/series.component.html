@@ -1,0 +1,10 @@
+<div *ngFor="let serie of this.Series" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="imagenes">
+        <img src="{{ serie.thumbnail.path }}.{{ serie.thumbnail.extension }}" width="250" alt="imagen_serie">
+      </div>
+      <h3 class="display-5">{{ serie.title }}</h3>
+      <p class="lead">{{ serie.description }}</p>
+      <p class="text-muted">{{ serie.startYear }}</p>
+    </div>
+  </div>

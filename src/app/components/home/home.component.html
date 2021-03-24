@@ -1,0 +1,21 @@
+<app-loading *ngIf="this.cargando" ></app-loading>
+<div *ngIf="!this.cargando" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"><img src="../../../assets/images/logo.png" width="200"></h1><!--i class="fas fa-robot"-->
+      <br>
+      <p class="lead">En esta página encontrarás toda la info referente a la casa Marvel©. Toda la información referente es obtenida de la API de Marvel, por lo que es fiable y auténtica al 100%.<br><br><strong>Personajes, cómics, series y mucho más 👽🚀</strong></p>
+    </div>
+</div>
+
+<div *ngIf="!this.cargando" class="row">
+    <div *ngFor="let pagina of ArrayPag" class="col m-3">
+        <div class="card" style="width: 18rem;">
+            <img [src]="pagina.img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{pagina.titulo}}</h5>
+                <p class="card-text">{{pagina.descripcion}}</p>
+                <button (click)="funcion(pagina.id)" class="btn btn-danger">Go !</button>
+            </div>
+        </div>
+    </div>
+</div>

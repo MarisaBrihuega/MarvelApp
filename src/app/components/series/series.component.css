@@ -1,0 +1,11 @@
+.jumbotron{
+    background-color: rgba(0, 48, 2, 0.808);
+}
+
+.imagenes{
+    float: right;
+}
+
+.lead{
+    text-align: justify;
+}

@@ -1,0 +1,23 @@
+.card{
+    background-color: rgba(46, 46, 46, 0.808);
+}
+
+.jumbotron{
+    background-color: rgba(46, 46, 46, 0.808);
+}
+
+.jumbotron h1{
+    color: rgb(143, 143, 143);
+    font-weight: 450;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.jumbotron p{
+    color: rgb(143, 143, 143);
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.fas {
+    color: rgb(94, 1, 1);
+}
